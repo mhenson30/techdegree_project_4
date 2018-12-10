@@ -1,5 +1,23 @@
 // media queries, flexbox settings
-@mixin flexed{
-  display: flex;
+@mixin flexed($dis:flex, $dir:null, $wrap:null, $jus:null){
+  display: $dis;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $jus;
+
+}
+
+@mixin mobile{
+  @media (min-width:$break-mobile){
+    @content;
+    }
+
+}
+
+@mixin desktop{
+  @media (min-width:$break-desktop) {
+    @content;
+
+  }
 
 }

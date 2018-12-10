@@ -9,6 +9,10 @@
 
 .blockquote{
   border-left: 2px solid $color1;
+  font-family: $gothic-font;
+  font-weight: $bold;
+  color: $color-lightgray;
+  font-style: italic;
 }
 
 .headline--primary{
@@ -21,4 +25,11 @@
   font-family: $gothic-font;
   font-weight: $regular;
   color: $color-lightgray;
+}
+
+a{
+  font-family: $gothic-font;
+  color: $color-white;
+  text-decoration: none;
+  padding: 10px;
 }

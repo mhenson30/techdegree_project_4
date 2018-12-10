@@ -1,3 +1,7 @@
 .nav__item{
   @extend %nav-item;
+  @include mobile{
+    width: 80%;
+    @include flexed($dis:flex, $dir:column, $jus: center);
+  }
 }
