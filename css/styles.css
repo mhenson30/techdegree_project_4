@@ -5,8 +5,70 @@
 }
 
 .nav__item {
-  background-color: #58e1c1;
   border-radius: 5px;
+}
+
+.btn--default {
+  background-color: #58e1c1;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+.btn--success {
+  background-color: #51ddfc;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+.btn--error {
+  background-color: #63cc82;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+.btn--warning {
+  background-color: #e4757a;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+.btn--info {
+  background-color: #927bc1;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .theme__colors {
@@ -15,17 +77,26 @@
   color: #808080;
 }
 
-@media (min-width: 480px) {
-  .nav__item {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.img--frame {
+  border: 1px solid #808080;
+  padding: 15px;
+}
+
+.nav__item:hover {
+  background-color: #58e1c1;
+}
+
+.nav__item:hover a {
+  color: white;
+}
+
+.nav__item a {
+  color: #808080;
 }
 
 .blockquote {
   border-left: 2px solid #58e1c1;
+  padding-left: 10px;
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   color: #808080;
@@ -40,7 +111,7 @@
 
 .headline--secondary {
   font-family: "Gothic A1", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #808080;
 }
 

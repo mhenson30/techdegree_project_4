@@ -1,7 +1,12 @@
 .nav__item{
   @extend %nav-item;
-  @include mobile{
-    width: 80%;
-    @include flexed($dis:flex, $dir:column, $jus: center);
-  }
+  &:hover{
+  background-color: $color1;
+  a{
+  color: $color-white;
+}
+}
+a{
+  color: $color-lightgray;
+}
 }

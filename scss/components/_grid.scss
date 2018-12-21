@@ -1,5 +1,9 @@
 .container{
-
+  width: 90%;
+  margin: 0 auto;
+  @include flexed($dir:column){
+    align-items: center;
+  }
 
 }
 
@@ -50,11 +54,9 @@
 
 .grid__col--10{
 
-
 }
 
 .grid__col--11{
-
 
 }
 

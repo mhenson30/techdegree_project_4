@@ -4,6 +4,7 @@
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $jus;
+  @content;
 
 }
 
@@ -20,4 +21,21 @@
 
   }
 
+}
+
+@mixin theme-background($color){
+  background-color: $color;
+  border-radius: 5px;
+}
+
+@mixin button-styles($color){
+  background-color: $color;
+  font-family: $gothic-font;
+  font-weight: $bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  color: $color-white;
+  @content;
 }

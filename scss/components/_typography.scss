@@ -9,6 +9,7 @@
 
 .blockquote{
   border-left: 2px solid $color1;
+  padding-left: 10px;
   font-family: $gothic-font;
   font-weight: $bold;
   color: $color-lightgray;
@@ -23,7 +24,7 @@
 
 .headline--secondary{
   font-family: $gothic-font;
-  font-weight: $regular;
+  font-weight: $light;
   color: $color-lightgray;
 }
 
