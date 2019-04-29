@@ -9,7 +9,7 @@
 }
 
 @mixin mobile{
-  @media (min-width:$break-mobile){
+  @media (max-width:$break-mobile){
     @content;
     }
 
@@ -25,17 +25,24 @@
 
 @mixin theme-background($color){
   background-color: $color;
+  color: $color-lightgray;
   border-radius: 5px;
+  padding: 10px;
+  @content;
 }
 
 @mixin button-styles($color){
   background-color: $color;
-  font-family: $gothic-font;
+  font-family: $font;
   font-weight: $bold;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: $color-white;
+  padding: 10px;
+  @include mobile {
+    width: 100%
+  }
   @content;
 }

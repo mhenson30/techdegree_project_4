@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Gothic+A1:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900");
 .link {
   text-decoration: none;
   color: #51ddfc;
@@ -11,57 +11,92 @@
 
 .btn--default {
   background-color: #58e1c1;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .btn--default {
+    width: 100%;
+  }
 }
 
 .btn--success {
   background-color: #51ddfc;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .btn--success {
+    width: 100%;
+  }
 }
 
 .btn--error {
   background-color: #63cc82;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .btn--error {
+    width: 100%;
+  }
 }
 
 .btn--warning {
   background-color: #e4757a;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .btn--warning {
+    width: 100%;
+  }
 }
 
 .btn--info {
   background-color: #927bc1;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .btn--info {
+    width: 100%;
+  }
 }
 
 .container {
@@ -72,14 +107,100 @@
   align-items: center;
 }
 
-.theme__colors {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 300;
+.grid__row [class="grid__col--12 theme__colors"] {
+  background-color: #80e8d1;
   color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid__row [class="grid__col--6 theme__colors"] {
+  background-color: #3fabca;
+  color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid__row [class="grid__col--4 theme__colors"] {
+  background-color: #7ee6fd;
+  color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid__row [class="grid__col--5 theme__colors"] {
+  background-color: #88d9a0;
+  color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid__row [class="grid__col--7 theme__colors"] {
+  background-color: #ec9fa3;
+  color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid__row [class="grid__col--7 theme__colors centered"] {
+  background-color: #ec9fa3;
+  color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid__row [class="grid__col--8 theme__colors"] {
+  background-color: #fd9f85;
+  color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid__row [class="grid__col--3 theme__colors"] {
+  background-color: #deb2ee;
+  color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .grid__row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid__col--9 {
+    width: 100%;
+  }
+}
+
+.grid__col--6 {
+  display: flex;
+}
+
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme__colors {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.img--logo {
+  align-items: center;
+  padding-top: 20px;
 }
 
 .img--frame {
   border: 1px solid #808080;
+  padding: 15px;
+}
+
+.nav__item {
   padding: 15px;
 }
 
@@ -98,33 +219,31 @@
 .blockquote {
   border-left: 2px solid #58e1c1;
   padding-left: 10px;
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-weight: 700i;
   color: #808080;
-  font-style: italic;
 }
 
 .headline--primary {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   color: #58e1c1;
 }
 
 .headline--secondary {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #808080;
 }
 
 a {
-  font-family: "Gothic A1", sans-serif;
-  color: white;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
   padding: 10px;
 }
 
 p {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #808080;
 }
 
