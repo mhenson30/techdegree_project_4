@@ -1,0 +1,30 @@
+.btn--default{
+  @include button-styles($color2){
+
+  }
+}
+
+.btn--success{
+  @include button-styles($color3){
+
+  }
+}
+
+.btn--error{
+  @include button-styles($color4){
+
+  }
+}
+.btn--warning{
+  @include button-styles($color6){
+
+  }
+}
+.btn--info{
+  @include button-styles($color5){
+
+  }
+}
+.theme__colors{
+
+}

@@ -1,33 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900");
-.link {
+a {
   text-decoration: none;
-  color: #51ddfc;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #5a5a5a;
 }
 
 .nav__item {
-  border-radius: 5px;
-  text-align: center;
+  list-style-type: none;
+  padding: 10px 20px;
 }
 
 .btn--default {
-  background-color: #58e1c1;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 5px;
-  border: none;
-  box-shadow: none;
-  color: white;
-  padding: 10px;
-}
-
-@media (max-width: 480px) {
-  .btn--default {
-    width: 100%;
-  }
-}
-
-.btn--success {
   background-color: #51ddfc;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -39,13 +24,7 @@
   padding: 10px;
 }
 
-@media (max-width: 480px) {
-  .btn--success {
-    width: 100%;
-  }
-}
-
-.btn--error {
+.btn--success {
   background-color: #63cc82;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -57,13 +36,7 @@
   padding: 10px;
 }
 
-@media (max-width: 480px) {
-  .btn--error {
-    width: 100%;
-  }
-}
-
-.btn--warning {
+.btn--error {
   background-color: #e4757a;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -75,10 +48,16 @@
   padding: 10px;
 }
 
-@media (max-width: 480px) {
-  .btn--warning {
-    width: 100%;
-  }
+.btn--warning {
+  background-color: #fd7856;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  color: white;
+  padding: 10px;
 }
 
 .btn--info {
@@ -94,85 +73,21 @@
 }
 
 @media (max-width: 480px) {
-  .btn--info {
-    width: 100%;
-  }
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.grid__row [class="grid__col--12 theme__colors"] {
-  background-color: #80e8d1;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.grid__row [class="grid__col--6 theme__colors"] {
-  background-color: #3fabca;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.grid__row [class="grid__col--4 theme__colors"] {
-  background-color: #7ee6fd;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.grid__row [class="grid__col--5 theme__colors"] {
-  background-color: #88d9a0;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.grid__row [class="grid__col--7 theme__colors"] {
-  background-color: #ec9fa3;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.grid__row [class="grid__col--7 theme__colors centered"] {
-  background-color: #ec9fa3;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.grid__row [class="grid__col--8 theme__colors"] {
-  background-color: #fd9f85;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.grid__row [class="grid__col--3 theme__colors"] {
-  background-color: #deb2ee;
-  color: #808080;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-@media (max-width: 480px) {
   .grid__row {
     display: flex;
     flex-direction: column;
   }
 }
 
+.grid__col--3 {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 480px) {
-  .grid__col--9 {
-    width: 100%;
+  .grid__col--3 a {
+    padding-top: 3em;
+    margin: 0 auto;
   }
 }
 
@@ -180,75 +95,141 @@
   display: flex;
 }
 
-.grid__col--12 {
+.grid__col--9 {
   display: flex;
   flex-direction: column;
 }
 
-.theme__colors {
+.grid__row .grid__col--3.theme__colors {
+  background-color: #deb2ee;
+  text-align: left;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  color: #818080;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 
-.img--logo {
-  align-items: center;
-  padding-top: 20px;
+.grid__row .grid__col--4.theme__colors {
+  background-color: #7ee6fd;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #818080;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.grid__row .grid__col--5.theme__colors {
+  background-color: #88d9a0;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #818080;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.grid__row .grid__col--6.theme__colors {
+  background-color: #3fabca;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #818080;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.grid__row .grid__col--7.theme__colors {
+  background-color: #ec9fa3;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #818080;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.grid__row .grid__col--8.theme__colors {
+  background-color: #fd9f85;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #818080;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.grid__row .grid__col--12.theme__colors {
+  background-color: #80e8d1;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #818080;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.centered {
+  font-family: "Lato", sans-serif;
 }
 
 .img--frame {
-  border: 1px solid #808080;
+  border: solid 1px #ababab;
   padding: 15px;
+  margin: 0 auto;
+}
+
+.img--avatar {
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .nav__item {
-  padding: 15px;
+  text-align: center;
 }
 
-.nav__item:hover {
+@media (max-width: 480px) {
+  .nav__item {
+    width: 100%;
+  }
+}
+
+.nav {
+  padding: 0;
+}
+
+a {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+a:hover {
   background-color: #58e1c1;
-}
-
-.nav__item:hover a {
   color: white;
 }
 
-.nav__item a {
-  color: #808080;
-}
-
 .blockquote {
-  border-left: 2px solid #58e1c1;
-  padding-left: 10px;
   font-family: "Lato", sans-serif;
-  font-weight: 700i;
-  color: #808080;
 }
 
 .headline--primary {
   font-family: "Lato", sans-serif;
-  font-weight: 900;
-  color: #58e1c1;
 }
 
 .headline--secondary {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  color: #808080;
-}
-
-a {
-  font-family: "Lato", sans-serif;
-  text-decoration: none;
-  padding: 10px;
 }
 
 p {
   font-family: "Lato", sans-serif;
-  color: #808080;
-}
-
-ul {
-  list-style-type: none;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */

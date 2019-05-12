@@ -1,9 +1,14 @@
 // links, images, headlines, nav items
 %links{
-  
+  text-decoration: none;
+  font-family: $font;
+  font-weight: 300;
+  font-size: 1em;
+  color: $color-darkestgray;
 
 }
 
 %nav-item{
-
+  list-style-type: none;
+  padding: 10px 20px;
 }

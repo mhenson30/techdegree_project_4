@@ -1,0 +1,16 @@
+
+.img{
+
+
+&--logo{
+}
+&--frame{
+ border: solid 1px $color-lightgray;
+ padding: 15px;
+ margin: 0 auto;
+}
+&--avatar{
+  padding: 20px;
+  margin: 0 auto;
+}
+}

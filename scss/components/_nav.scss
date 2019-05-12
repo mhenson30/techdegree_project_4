@@ -1,0 +1,21 @@
+.nav__item{
+ @extend %nav-item;
+ text-align: center;
+ @include mobile{
+   width: 100%;
+ }
+}
+.nav{
+  padding: 0;
+}
+
+a{
+  @extend %links;
+  padding: 10px 20px;
+  border-radius: 5px;
+  &:hover{
+    background-color: $color1;
+    color: $color-white;
+  }
+
+}

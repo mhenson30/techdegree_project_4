@@ -1,0 +1,54 @@
+.container{
+
+}
+.grid__row{
+  @include mobile{
+  @include flexed($dir: column){}
+}
+}
+.grid__col{
+  &--3{
+    @include flexed($dir: column){}
+    @include mobile{
+    a{
+      padding-top: 3em;
+      margin: 0 auto;
+  }
+}
+  }
+  &--6{
+    @include flexed(){}
+  }
+  &--9{
+    @include flexed($dir: column){}
+    }
+}
+
+.grid__row .grid__col--3.theme__colors{
+  @include background-colors($color-grid3){}
+}
+.grid__row .grid__col--4.theme__colors{
+  @include background-colors($color-grid4){}
+}
+.grid__row .grid__col--5.theme__colors{
+  @include background-colors($color-grid5){}
+}
+.grid__row .grid__col--6.theme__colors{
+  @include background-colors($color-grid6){}
+}
+.grid__row .grid__col--7.theme__colors{
+  @include background-colors($color-grid7){}
+}
+.grid__row .grid__col--8.theme__colors{
+  @include background-colors($color-grid8){}
+}
+.grid__row .grid__col--12.theme__colors{
+  @include background-colors($color-grid12){}
+}
+.centered{
+  font-family: $font;
+}
+
+.theme__colors{
+
+}
