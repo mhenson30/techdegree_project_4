@@ -1,5 +1,6 @@
 // universal, ul and p elements only
 p{
   font-family: $font;
-  font-size: 400;
+  font-weight: $light;
+  color: $color-darkestgray;
 }

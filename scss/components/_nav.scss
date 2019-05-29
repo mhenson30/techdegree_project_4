@@ -9,12 +9,15 @@
       background-color: $color1;
       color: $color-white;
     }
-    @include mobile{
-      width: 100%;
-    }
   }
 }
 .nav{
+  @include desktop{
+  @include flexed(){}
+}
+  @include mobile{
+  @include flexed($dir: column){}
+}
   padding: 0;
 }
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,700");
 a {
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -9,67 +9,95 @@ a {
 
 .nav__item {
   list-style-type: none;
+  display: inline-block;
   padding: 10px 20px;
 }
 
 .btn--default {
   background-color: #51ddfc;
   font-family: "Lato", sans-serif;
-  font-weight: "700";
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
-  padding: 10px;
+  padding: 12px;
 }
 
 .btn--success {
   background-color: #63cc82;
   font-family: "Lato", sans-serif;
-  font-weight: "700";
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
-  padding: 10px;
+  padding: 12px;
 }
 
 .btn--error {
   background-color: #e4757a;
   font-family: "Lato", sans-serif;
-  font-weight: "700";
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
-  padding: 10px;
+  padding: 12px;
 }
 
 .btn--warning {
   background-color: #fd7856;
   font-family: "Lato", sans-serif;
-  font-weight: "700";
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
-  padding: 10px;
+  padding: 12px;
 }
 
 .btn--info {
   background-color: #927bc1;
   font-family: "Lato", sans-serif;
-  font-weight: "700";
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   box-shadow: none;
   color: white;
+  padding: 12px;
+}
+
+.theme__colors {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form [placeholder] {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   padding: 10px;
+}
+
+.form input {
+  border-bottom: 5px solid #58e1c1;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  margin-bottom: 25px;
+}
+
+.form__label--hidden {
+  display: none;
 }
 
 .container {
@@ -77,16 +105,26 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+.grid__row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1400px) {
   .grid__row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
 .grid__col--3 {
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
+}
+
+.grid__col--3:last-of-type {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 480px) {
@@ -96,105 +134,242 @@ a {
   }
 }
 
-.grid__col--6 {
-  display: flex;
+.grid__col--4 {
+  margin-bottom: 5px;
 }
 
-.grid__col--9 {
+.grid__col--4:last-of-type {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1400px) {
+  .grid__col--4 {
+    flex: 1 0 33%;
+  }
+}
+
+.grid__col--5 {
+  margin-bottom: 5px;
+}
+
+.grid__col--6 {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.grid__col--6:last-of-type {
+  margin-bottom: 30px;
+}
+
+.grid__col--7 {
+  margin-bottom: 30px;
+}
+
+.grid__col--8 {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__col--9 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }
 
 .grid__row .grid__col--3.theme__colors {
   background-color: #deb2ee;
-  text-align: left;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__row .grid__col--3.theme__colors {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--3.theme__colors {
+    text-align: center;
+  }
 }
 
 .grid__row .grid__col--4.theme__colors {
   background-color: #7ee6fd;
-  text-align: left;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__row .grid__col--4.theme__colors {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--4.theme__colors {
+    text-align: center;
+  }
 }
 
 .grid__row .grid__col--5.theme__colors {
   background-color: #88d9a0;
-  text-align: left;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__row .grid__col--5.theme__colors {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--5.theme__colors {
+    text-align: center;
+  }
 }
 
 .grid__row .grid__col--6.theme__colors {
   background-color: #3fabca;
-  text-align: left;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__row .grid__col--6.theme__colors {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--6.theme__colors {
+    text-align: center;
+  }
 }
 
 .grid__row .grid__col--7.theme__colors {
   background-color: #ec9fa3;
-  text-align: left;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__row .grid__col--7.theme__colors {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--7.theme__colors {
+    text-align: center;
+  }
 }
 
 .grid__row .grid__col--8.theme__colors {
   background-color: #fd9f85;
-  text-align: left;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__row .grid__col--8.theme__colors {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--8.theme__colors {
+    text-align: center;
+  }
 }
 
 .grid__row .grid__col--12.theme__colors {
   background-color: #80e8d1;
-  text-align: left;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .grid__row .grid__col--12.theme__colors {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--12.theme__colors {
+    text-align: center;
+  }
 }
 
 .centered {
+  justify-content: center;
   font-family: "Lato", sans-serif;
 }
 
 .img--frame {
   border: solid 1px #ababab;
   padding: 15px;
-  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .img--frame {
+    margin: 0 auto;
+  }
 }
 
 .img--avatar {
   padding: 20px;
-  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .img--avatar {
+    margin: 0 auto;
+  }
 }
 
 .nav__item {
@@ -212,37 +387,60 @@ a {
   color: white;
 }
 
-@media (max-width: 480px) {
-  .nav__item a {
-    width: 100%;
-  }
-}
-
 .nav {
   padding: 0;
 }
 
+@media (min-width: 1400px) {
+  .nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.link {
+  font-weight: 400;
+}
+
 .blockquote {
   font-family: "Lato", sans-serif;
-  border-left: 4px solid #58e1c1;
+  font-style: italic;
+  font-weight: 200;
+  border-left: 5px solid #58e1c1;
   border-radius: 3px;
   padding-left: 5px;
+  color: #5a5a5a;
+  font-size: 1.5em;
 }
 
 .headline--primary {
   font-family: "Lato", sans-serif;
   color: #58e1c1;
-  font-weight: "700";
+  font-weight: 700;
+  width: 66%;
+  margin-left: 10px;
 }
 
 .headline--secondary {
   font-family: "Lato", sans-serif;
-  font-weight: "300";
+  font-weight: 300;
+}
+
+em {
+  font-weight: 300;
+  color: #818080;
 }
 
 p {
   font-family: "Lato", sans-serif;
-  font-size: 400;
+  font-weight: 300;
+  color: #5a5a5a;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */

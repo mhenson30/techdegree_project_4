@@ -7,10 +7,14 @@
 &--frame{
  border: solid 1px $color-lightgray;
  padding: 15px;
+ @include mobile{
  margin: 0 auto;
+}
 }
 &--avatar{
   padding: 20px;
+  @include mobile{
   margin: 0 auto;
+}
 }
 }
