@@ -8,16 +8,18 @@
 
 }
 
-@mixin mobile{
+@mixin mobile($w:null){
     @media (max-width:$break-mobile){
     @content;
   }
+  width: $w;
 }
 
-@mixin desktop{
+@mixin desktop($w:null){
   @media (min-width:$break-desktop) {
     @content;
   }
+  width: $w;
 
 }
 

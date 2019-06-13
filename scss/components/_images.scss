@@ -7,13 +7,16 @@
 &--frame{
  border: solid 1px $color-lightgray;
  padding: 15px;
- @include mobile{
+ @include desktop(){
+   flex: 0 1 50%;
+ }
+ @include mobile(){
  margin: 0 auto;
 }
 }
 &--avatar{
   padding: 20px;
-  @include mobile{
+  @include mobile(){
   margin: 0 auto;
 }
 }
