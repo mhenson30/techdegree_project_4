@@ -3,19 +3,24 @@
 
 
 &--logo{
+  width: 50%;
 }
 &--frame{
  border: solid 1px $color-lightgray;
  padding: 15px;
+ max-width: 100%;
+ min-width: 20%;
+ align-self: center;
  @include desktop(){
    flex: 0 1 50%;
  }
  @include mobile(){
- margin: 0 auto;
+  flex: 0 1 100%;
 }
 }
 &--avatar{
   padding: 20px;
+  align-self: center;
   @include mobile(){
   margin: 0 auto;
 }

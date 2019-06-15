@@ -131,6 +131,10 @@
 .centered{
   font-family: $font;
   @include desktop($w: 66%){
+    margin: 0 auto;
+  }
+  @include mobile($w:100%){
+    
   }
 }
 
