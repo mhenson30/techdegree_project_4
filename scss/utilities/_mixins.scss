@@ -24,6 +24,7 @@
 
 @mixin background-colors($color){
   background-color: $color;
+    height: 20px;
     font-family: $font;
     color: $color-darkgray;
     padding-left: 15px;

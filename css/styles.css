@@ -469,17 +469,9 @@ template {
   width: 100%;
 }
 
-@media (min-width: 1400px) {
-  .grid__col--3:not(.theme__colors) {
-    width: 10%;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid__col--3 a {
-    padding-top: 3em;
-    margin: 0 auto;
-  }
+.grid__col--3 a {
+  padding-top: 3em;
+  margin: 0 auto;
 }
 
 .grid__col--4 {
@@ -527,6 +519,7 @@ template {
 
 .grid__row .grid__col--3.theme__colors {
   background-color: #deb2ee;
+  height: 20px;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
@@ -542,6 +535,7 @@ template {
 
 .grid__row .grid__col--4.theme__colors {
   background-color: #7ee6fd;
+  height: 20px;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
@@ -557,6 +551,7 @@ template {
 
 .grid__row .grid__col--5.theme__colors {
   background-color: #88d9a0;
+  height: 20px;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
@@ -568,6 +563,7 @@ template {
 
 .grid__row .grid__col--6.theme__colors {
   background-color: #3fabca;
+  height: 20px;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
@@ -583,6 +579,7 @@ template {
 
 .grid__row .grid__col--7.theme__colors {
   background-color: #ec9fa3;
+  height: 20px;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
@@ -593,6 +590,7 @@ template {
 
 .grid__row .grid__col--8.theme__colors {
   background-color: #fd9f85;
+  height: 20px;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
@@ -603,6 +601,7 @@ template {
 
 .grid__row .grid__col--12.theme__colors {
   background-color: #80e8d1;
+  height: 20px;
   font-family: "Lato", sans-serif;
   color: #818080;
   padding-left: 15px;
@@ -621,10 +620,6 @@ template {
   .centered {
     margin: 0 auto;
   }
-}
-
-.img--logo {
-  width: 50%;
 }
 
 .img--frame {
@@ -648,6 +643,7 @@ template {
 }
 
 .img--avatar {
+  width: 50%;
   padding: 20px;
   align-self: center;
 }

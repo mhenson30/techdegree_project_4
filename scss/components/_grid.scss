@@ -18,17 +18,13 @@
 
   &--3{
     @include flexed($dir: column){}
-    @include desktop($w: 25%){
-      &:not(.theme__colors){
-        width: 10%;
-      }
-    }
+    @include desktop($w: 25%){}
     @include mobile($w: 100%){
+    }
     a{
       padding-top: 3em;
       margin: 0 auto;
   }
-}
 }
 
   &--4{
@@ -134,7 +130,7 @@
     margin: 0 auto;
   }
   @include mobile($w:100%){
-    
+
   }
 }
 
