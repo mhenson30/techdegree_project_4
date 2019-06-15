@@ -3,7 +3,9 @@
 
 
 &--logo{
+  align-self: left;
 }
+
 &--frame{
  border: solid 1px $color-lightgray;
  padding: 15px;
