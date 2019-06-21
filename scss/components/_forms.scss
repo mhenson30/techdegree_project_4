@@ -4,6 +4,7 @@
     font-family: $font;
     font-weight: $regular;
     padding: 10px;
+
   }
   input{
     border-bottom: 5px solid $color1;
@@ -14,11 +15,12 @@
 
   }
 
-
 }
+
 .form__label--hidden{
   display: none;
 
 }
 .form--input{
+
 }

@@ -21,16 +21,15 @@
 .nav{
   @include desktop(){
   @include flexed(){
-    
+
   }
 }
   @include mobile(){
   @include flexed($dir: column){}
 }
   padding: 0;
-}
+  a{
+    @extend %links;
 
-a{
-  @extend %links;
-
+  }
 }

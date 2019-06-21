@@ -1,7 +1,7 @@
 .container{
- width: 90%;
+ width: 85%;
  margin: 0 auto;
- padding-top: 15px;
+ padding-top: 30px;
 }
 .grid__row{
   @include flexed(){}
@@ -17,17 +17,16 @@
 .grid__col{
 
   &--3{
-    &:nth-child(1){
-      width: 25%;
-    }
     @include flexed($dir: column){}
     @include desktop($w: 25%){
     }
     @include mobile($w: 100%){
     }
     a{
-      // padding-top: 3em;
+      width: 170px;
+      @include mobile{
       margin: 0 auto;
+    }
   }
 }
 
@@ -51,7 +50,7 @@
     @include flexed(){}
 
     @include desktop($w: 50%){
-
+      justify-content: space-around;
     }
     @include mobile($w:100%){}
   }
@@ -68,6 +67,8 @@
 
     }
     @include mobile($w:100%){}
+
+    margin-right: 40px;
   }
 
   &--9{
@@ -78,21 +79,25 @@
     @include flexed(){
       width: 100%
     }
+
     @include mobile(){
       flex-direction: column;
     }
-    @include desktop(){
-      flex-direction: row;
-    }
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 }
 
 .grid__row .grid__col--3.theme__colors{
-  @include background-colors($color-grid3){}
+  @include background-colors($color-grid3){
+
+  }
   @include mobile(){
   &:last-of-type {
-    margin-bottom: 30px;
-  }
+    margin-bottom: 40px;
+}
 }
 
 }
@@ -100,8 +105,8 @@
   @include background-colors($color-grid4){}
   @include mobile(){
   &:last-of-type {
-    margin-bottom: 30px;
-  }
+    margin-bottom: 40px;
+}
 }
 
 }
@@ -113,13 +118,16 @@
   @include background-colors($color-grid6){}
   @include mobile(){
   &:last-of-type {
-    margin-bottom: 30px;
-  }
+    margin-bottom: 40px;
+}
 }
 
 }
 .grid__row .grid__col--7.theme__colors{
   @include background-colors($color-grid7){}
+  @include mobile(){
+      margin-bottom: 40px;
+  }
 
 }
 .grid__row .grid__col--8.theme__colors{
@@ -128,15 +136,12 @@
 }
 .grid__row .grid__col--12.theme__colors{
   @include background-colors($color-grid12){}
-
 }
 .centered{
   font-family: $font;
-  @include desktop($w: 66%){
-    margin: 0 auto;
-  }
-  @include mobile($w:100%){
-
+  width: 100%;
+  margin: 0 auto;
+  @include desktop($w:66%){
   }
 }
 

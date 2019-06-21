@@ -3,7 +3,12 @@
 
 
 &--logo{
-  align-self: left;
+  @include desktop(){
+  align-self: flex-start;
+}
+@include mobile(){
+  align-self: center;
+}
 }
 
 &--frame{
