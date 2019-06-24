@@ -17,10 +17,9 @@
 .grid__col{
 
   &--3{
+    max-width: 100%;
     @include flexed($dir: column){}
     @include desktop($w: 25%){
-    }
-    @include mobile($w: 100%){
     }
     a{
       width: 170px;
@@ -31,55 +30,50 @@
 }
 
   &--4{
+    max-width: 100%;
     @include desktop($w: 33%){
 
     }
-    @include mobile($w:100%){}
 
   }
 
   &--5{
-
-    @include desktop($w: 33%){
+    max-width: 100%;
+    @include desktop($w: 40%){
 }
 
-  @include mobile($w:100%){}
-  }
+}
 
   &--6{
+    max-width: 100%;
     @include flexed(){}
 
     @include desktop($w: 50%){
-      justify-content: space-around;
     }
-    @include mobile($w:100%){}
+    justify-content: space-around;
   }
 
   &--7{
-    @include desktop($w: 66%){
-
-    }
-    @include mobile($w:100%){}
+    max-width: 100%;
+    @include desktop($w: 60%){
+  }
   }
 
   &--8{
+    max-width: 100%;
     @include desktop($w: 66%){
-
     }
-    @include mobile($w:100%){}
 
-    margin-right: 40px;
   }
 
   &--9{
-
+    max-width: 100%;
   }
 
   &--12{
     @include flexed(){
-      width: 100%
+      width: 100%;
     }
-
     @include mobile(){
       flex-direction: column;
     }
@@ -98,6 +92,7 @@
   &:last-of-type {
     margin-bottom: 40px;
 }
+text-align: center;
 }
 
 }
@@ -107,11 +102,13 @@
   &:last-of-type {
     margin-bottom: 40px;
 }
+text-align: center;
 }
 
 }
 .grid__row .grid__col--5.theme__colors{
   @include background-colors($color-grid5){}
+  text-align: center;
 
 }
 .grid__row .grid__col--6.theme__colors{
@@ -121,28 +118,32 @@
     margin-bottom: 40px;
 }
 }
-
+text-align: center;
 }
 .grid__row .grid__col--7.theme__colors{
   @include background-colors($color-grid7){}
   @include mobile(){
       margin-bottom: 40px;
   }
-
+text-align: center;
 }
 .grid__row .grid__col--8.theme__colors{
   @include background-colors($color-grid8){}
+  text-align: center;
+  @include desktop(){
+    margin-right: 10px;
+  }
 
 }
 .grid__row .grid__col--12.theme__colors{
   @include background-colors($color-grid12){}
 }
 .centered{
-  font-family: $font;
   width: 100%;
-  margin: 0 auto;
   @include desktop($w:66%){
+
   }
+  margin: 0 auto;
 }
 
 .theme__colors{

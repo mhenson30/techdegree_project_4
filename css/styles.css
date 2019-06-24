@@ -462,10 +462,10 @@ template {
 }
 
 .grid__col--3 {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  width: 25%;
-  width: 100%;
+  flex-basis: 25%;
 }
 
 .grid__col--3 a {
@@ -479,36 +479,34 @@ template {
 }
 
 .grid__col--4 {
-  width: 33%;
-  width: 100%;
+  max-width: 100%;
+  flex-basis: 33%;
 }
 
 .grid__col--5 {
-  width: 33%;
-  width: 100%;
+  max-width: 100%;
+  flex-basis: 40%;
 }
 
 .grid__col--6 {
+  max-width: 100%;
   display: flex;
-  width: 50%;
-  width: 100%;
-}
-
-@media (min-width: 1400px) {
-  .grid__col--6 {
-    justify-content: space-around;
-  }
+  flex-basis: 50%;
+  justify-content: space-around;
 }
 
 .grid__col--7 {
-  width: 66%;
-  width: 100%;
+  max-width: 100%;
+  flex-basis: 60%;
 }
 
 .grid__col--8 {
-  width: 66%;
-  width: 100%;
-  margin-right: 40px;
+  max-width: 100%;
+  flex-basis: 66%;
+}
+
+.grid__col--9 {
+  max-width: 100%;
 }
 
 .grid__col--12 {
@@ -542,6 +540,9 @@ template {
 }
 
 @media (max-width: 480px) {
+  .grid__row .grid__col--3.theme__colors {
+    text-align: center;
+  }
   .grid__row .grid__col--3.theme__colors:last-of-type {
     margin-bottom: 40px;
   }
@@ -564,6 +565,9 @@ template {
 }
 
 @media (max-width: 480px) {
+  .grid__row .grid__col--4.theme__colors {
+    text-align: center;
+  }
   .grid__row .grid__col--4.theme__colors:last-of-type {
     margin-bottom: 40px;
   }
@@ -579,6 +583,7 @@ template {
   padding-bottom: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .grid__row .grid__col--5.theme__colors:not(:last-child) {
@@ -595,6 +600,7 @@ template {
   padding-bottom: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .grid__row .grid__col--6.theme__colors:not(:last-child) {
@@ -617,6 +623,7 @@ template {
   padding-bottom: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .grid__row .grid__col--7.theme__colors:not(:last-child) {
@@ -639,10 +646,17 @@ template {
   padding-bottom: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .grid__row .grid__col--8.theme__colors:not(:last-child) {
   margin-right: 10px;
+}
+
+@media (min-width: 1400px) {
+  .grid__row .grid__col--8.theme__colors {
+    margin-right: 10px;
+  }
 }
 
 .grid__row .grid__col--12.theme__colors {
@@ -662,10 +676,9 @@ template {
 }
 
 .centered {
-  font-family: "Lato", sans-serif;
   width: 100%;
+  flex-basis: 66%;
   margin: 0 auto;
-  width: 66%;
 }
 
 @media (min-width: 1400px) {
@@ -701,7 +714,7 @@ template {
 }
 
 .img--avatar {
-  width: 50%;
+  width: 45%;
   padding: 20px;
   align-self: center;
 }

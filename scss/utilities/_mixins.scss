@@ -12,14 +12,14 @@
     @media (max-width:$break-mobile){
     @content;
   }
-  width: $w;
+  flex-basis: $w;
 }
 
 @mixin desktop($w:null){
   @media (min-width:$break-desktop) {
     @content;
   }
-  width: $w;
+  flex-basis: $w;
 }
 
 @mixin background-colors($color){
