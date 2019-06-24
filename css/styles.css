@@ -505,6 +505,12 @@ template {
   flex-basis: 66%;
 }
 
+@media (min-width: 1400px) {
+  .grid__col--8 {
+    margin-right: 20px;
+  }
+}
+
 .grid__col--9 {
   max-width: 100%;
 }
