@@ -1,9 +1,8 @@
 .nav__item{
  @extend %nav-item;
  text-align: center;
- &:first-of-type{
-   margin-top: 10px;
- }
+   margin: 10px;
+
  &:hover{
    background-color: $color1;
    transition: background-color .8s ease;
@@ -13,11 +12,13 @@
    padding: 15px 20px;
    border-radius: 5px;
  }
+
   a{
     color: $color-darkestgray;
 
   }
 }
+
 .nav{
   @include desktop(){
   @include flexed(){

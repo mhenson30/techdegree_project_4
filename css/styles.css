@@ -14,6 +14,10 @@
   margin-bottom: 10px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -448,16 +452,19 @@ template {
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .grid__row {
     flex-direction: column;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 601px) {
   .grid__row {
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+  .grid__row:first-of-type {
+    justify-content: space-between;
   }
 }
 
@@ -465,14 +472,19 @@ template {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  flex-basis: 25%;
+}
+
+@media (min-width: 601px) {
+  .grid__col--3 {
+    flex-basis: 25%;
+  }
 }
 
 .grid__col--3 a {
   width: 170px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .grid__col--3 a {
     margin: 0 auto;
   }
@@ -480,34 +492,54 @@ template {
 
 .grid__col--4 {
   max-width: 100%;
-  flex-basis: 33%;
+}
+
+@media (min-width: 601px) {
+  .grid__col--4 {
+    flex-basis: 33%;
+  }
 }
 
 .grid__col--5 {
   max-width: 100%;
-  flex-basis: 40%;
+}
+
+@media (min-width: 601px) {
+  .grid__col--5 {
+    flex-basis: 40%;
+  }
 }
 
 .grid__col--6 {
   max-width: 100%;
   display: flex;
-  flex-basis: 50%;
   justify-content: space-around;
+}
+
+@media (min-width: 601px) {
+  .grid__col--6 {
+    flex-basis: 50%;
+  }
 }
 
 .grid__col--7 {
   max-width: 100%;
-  flex-basis: 60%;
+}
+
+@media (min-width: 601px) {
+  .grid__col--7 {
+    flex-basis: 60%;
+  }
 }
 
 .grid__col--8 {
   max-width: 100%;
-  flex-basis: 66%;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 601px) {
   .grid__col--8 {
-    margin-right: 20px;
+    margin-right: 30px;
+    flex-basis: 66%;
   }
 }
 
@@ -515,17 +547,30 @@ template {
   max-width: 100%;
 }
 
-.grid__col--12 {
-  display: flex;
-  width: 100%;
-  align-content: center;
-  flex-direction: row;
-  justify-content: space-around;
+@media (min-width: 601px) {
+  .grid__col--9 {
+    align-items: flex-start;
+  }
 }
 
-@media (max-width: 480px) {
+.grid__col--12 {
+  display: flex;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
   .grid__col--12 {
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) {
+  .grid__col--12 {
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -541,11 +586,13 @@ template {
   margin-bottom: 10px;
 }
 
-.grid__row .grid__col--3.theme__colors:not(:last-child) {
-  margin-right: 10px;
+@media (min-width: 601px) {
+  .grid__row .grid__col--3.theme__colors:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .grid__row .grid__col--3.theme__colors {
     text-align: center;
   }
@@ -566,11 +613,13 @@ template {
   margin-bottom: 10px;
 }
 
-.grid__row .grid__col--4.theme__colors:not(:last-child) {
-  margin-right: 10px;
+@media (min-width: 601px) {
+  .grid__row .grid__col--4.theme__colors:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .grid__row .grid__col--4.theme__colors {
     text-align: center;
   }
@@ -592,8 +641,10 @@ template {
   text-align: center;
 }
 
-.grid__row .grid__col--5.theme__colors:not(:last-child) {
-  margin-right: 10px;
+@media (min-width: 601px) {
+  .grid__row .grid__col--5.theme__colors:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .grid__row .grid__col--6.theme__colors {
@@ -609,11 +660,13 @@ template {
   text-align: center;
 }
 
-.grid__row .grid__col--6.theme__colors:not(:last-child) {
-  margin-right: 10px;
+@media (min-width: 601px) {
+  .grid__row .grid__col--6.theme__colors:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .grid__row .grid__col--6.theme__colors:last-of-type {
     margin-bottom: 40px;
   }
@@ -632,11 +685,13 @@ template {
   text-align: center;
 }
 
-.grid__row .grid__col--7.theme__colors:not(:last-child) {
-  margin-right: 10px;
+@media (min-width: 601px) {
+  .grid__row .grid__col--7.theme__colors:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .grid__row .grid__col--7.theme__colors {
     margin-bottom: 40px;
   }
@@ -655,11 +710,13 @@ template {
   text-align: center;
 }
 
-.grid__row .grid__col--8.theme__colors:not(:last-child) {
-  margin-right: 10px;
+@media (min-width: 601px) {
+  .grid__row .grid__col--8.theme__colors:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 601px) {
   .grid__row .grid__col--8.theme__colors {
     margin-right: 10px;
   }
@@ -677,23 +734,36 @@ template {
   margin-bottom: 10px;
 }
 
-.grid__row .grid__col--12.theme__colors:not(:last-child) {
-  margin-right: 10px;
+@media (min-width: 601px) {
+  .grid__row .grid__col--12.theme__colors:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .centered {
-  width: 100%;
-  flex-basis: 66%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 600px) {
+  .centered {
+    min-width: 95%;
+  }
+}
+
+@media (min-width: 601px) {
+  .centered {
+    flex-basis: 66%;
+  }
+}
+
+@media (min-width: 601px) {
   .img--logo {
     align-self: flex-start;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .img--logo {
     align-self: center;
   }
@@ -703,40 +773,42 @@ template {
   border: solid 1px #ababab;
   padding: 15px;
   max-width: 100%;
-  min-width: 20%;
   align-self: center;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 601px) {
   .img--frame {
-    flex: 0 1 50%;
+    flex: 1 0 50%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .img--frame {
     flex: 0 1 100%;
   }
 }
 
 .img--avatar {
-  width: 45%;
   padding: 20px;
   align-self: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .img--avatar {
     margin: 0 auto;
   }
 }
 
-.nav__item {
-  text-align: center;
+@media (min-width: 601px) {
+  .img--avatar {
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
 }
 
-.nav__item:first-of-type {
-  margin-top: 10px;
+.nav__item {
+  text-align: center;
+  margin: 10px;
 }
 
 .nav__item:hover {
@@ -758,13 +830,13 @@ template {
   padding: 0;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 601px) {
   .nav {
     display: flex;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .nav {
     display: flex;
     flex-direction: column;
